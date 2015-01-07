@@ -1,3 +1,1 @@
-probando github.
-
-para ver si sale esto?
+16px para el tamaño de letra en la web para telefono, table, y escritorio
