@@ -234,6 +234,9 @@ nav ul li a
 	display: block;
 	padding: 0.5em 0;
 }
+aside{
+	display: none;
+}
 #contenido
 {
 	margin: 1em;
@@ -323,16 +326,21 @@ nav ul li a
 	}
 	#contenido .item{
 		width: 49%;
-		float: left; 
+		float: left;
 	}
 	#contenido .item:nth-child(odd){
 		margin-right: 2%;
 	}
 }
 
-
-/*@media print{
-	body{
-		font-size: 50px;
+@media screen and (min-width:1000px){
+	aside{
+		display: block;
+		float: right;
+		margin:1em;
+		width: 20%;
 	}
-}*/
+	aside video{
+		width: 100%;
+	}
+}
