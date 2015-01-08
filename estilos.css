@@ -1,3 +1,119 @@
+/*@font-face {
+    font-family: 'open_sansregular';
+    src: url('fuentes/OpenSans-Regular-webfont.eot');
+    src: url('fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+@font-face {
+	font-family: 'puls4';
+	src:url('fuentes/puls4.eot?-2smsdq');
+	src:url('fuentes/puls4.eot?#iefix-2smsdq') format('embedded-opentype'),
+		url('fuentes/puls4.woff?-2smsdq') format('woff'),
+		url('fuentes/puls4.ttf?-2smsdq') format('truetype'),
+		url('fuentes/puls4.svg?-2smsdq#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'puls4';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+	content: "\f03f";
+	color: #DD4F24;
+}
+
+.icon-arrow-up:before {
+	content: "\f03d";
+}
+
+.icon-pen:before {
+	content: "\e908";
+	margin-right: 0.5em;
+}
+
+.icon-headphones:before {
+	content: "\e910";
+}
+
+.icon-podcast:before {
+	content: "\e91c";
+}
+
+.icon-feed:before {
+	content: "\e91d";
+}
+
+.icon-folder-open:before {
+	content: "\e930";
+}
+
+.icon-folder-plus:before {
+	content: "\e931";
+}
+
+.icon-folder-download:before {
+	content: "\e933";
+}
+
+.icon-folder-upload:before {
+	content: "\e934";
+}
+
+.icon-star-full:before {
+	content: "\e9d9";
+	color: #FFB32C;
+	margin-right: 0.4em;
+	position: relative;
+	top: 0.1em;
+}
+
+.icon-plus:before {
+	content: "\ea0a";
+}
+
+.icon-minus:before {
+	content: "\ea0b";
+}
+
+.icon-cross:before {
+	content: "\ea0f";
+}
+
+.icon-checkmark:before {
+	content: "\ea10";
+}
+
+.icon-facebook:before {
+	content: "\ea8c";
+}
+
+.icon-twitter:before {
+	content: "\ea91";
+}
+
+.icon-youtube3:before {
+	content: "\ea99";
+}
+
+
 a
 {
 	color: #22BCE0;
@@ -6,7 +122,7 @@ a
 body 
 {
 	background: #EEEEEE;
-	font-family: Arial;
+	font-family: "Open Sans";
 	font-size: 16px;
 }
 footer
@@ -50,7 +166,7 @@ header h1
 	
 	font-size: 1.2em;
 	font-weight: normal;
-	margin: 1em 70px 0 0;
+	margin: 0.5em 70px 0 0;
 	
 }
 
@@ -64,7 +180,7 @@ header #logo img
 
 header #avatar
 {
-	margin: 1.3em 0.5em 0 0;
+	margin: 0.5em 0.5em 0 0;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -79,8 +195,8 @@ header #avatar img
 nav
 {
 		
-	background: #80BCA3;
-	padding: 0 0.5em;
+	background: #6E62BB;;
+	padding: 0 6em 0 0;
 	position: relative;
 
 }
@@ -93,7 +209,7 @@ nav ul
 nav ul #publicar_nav
 {
 	position: absolute;
-	top: -0.3em;
+	top: -0.2em;
 	right: 0;
 }
 nav ul #publicar_nav a
@@ -125,10 +241,10 @@ nav ul li a
 #contenido .item
 {
 	background: white;
-	border-bottom: 3px solid #22BCE0;
+	border-bottom: 3px #22BCE0 solid;
 	margin-bottom: 3em;
+	min-height: 128px;
 	position: relative;
-	min-height: 100px;
 }
 #contenido .item .autor_item
 {
@@ -161,8 +277,7 @@ nav ul li a
 {
 	float:left;
 	margin: 0 1em 0 0;
-	padding-top: 0.2em; 
-	border: 4px solid red;
+	padding-top: 0.2em;
 }
 
 #contenido .item .imagen_item img
@@ -186,11 +301,14 @@ nav ul li a
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
 	left: 5%;
-	margin-top: 3px;
+	margin-top: 0.7em;
 	padding: 0.2em 0.5em;
 	position: absolute;
 	top:100%;
 	width: 90%;
+}
+#contenido .item .votacion a {
+	text-decoration: none;
 }
 
 #contenido .item .votacion .comentarios_item,
