@@ -1,1 +1,2 @@
 16px para el tamaño de letra en la web para telefono, table, y escritorio
+media queries, preguntas al dispositivo para ver q tan grnade esta
